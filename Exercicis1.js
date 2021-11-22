@@ -1,4 +1,5 @@
-var posicio = 'primer'
+const posicio = 'primer'
 console.log(posicio)
-var posicio = 'segon'
+const posicio = 'segon'
 console.log(posicio)
+ 
