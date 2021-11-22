@@ -1,4 +1,5 @@
-Math.hypotenusa = Math.hypot || function(x,y){ 
-    return Math.sqrt(x*x + y*y)
+function div(a, b){
+    return a/b
 }
-var x = 4, y = 4; document.write(Math.hypot(x, y))
+let operacio = div('text', 2)
+console.log('Resultat operacio: ' + operacio)
