@@ -1,2 +1,7 @@
-let nom = 'Eloy-Castaño-Molina'
-console.log(nom.substr(0,5) + nom.substr(6)) 
+console.log(x)
+var x = undefined;
+
+var y = null;
+console.log(typeof y);
+
+console.log(x+y)
