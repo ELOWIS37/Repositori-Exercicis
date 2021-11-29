@@ -1,4 +1,5 @@
-function NomCog(ElMeuNom = 'Eloy'+ ' Castaño') {
-    console.log(ElMeuNom)
+
+function Valor(Numero = 5) {
+    console.log(typeof(Numero))
 }
-NomCog();
+Valor();
