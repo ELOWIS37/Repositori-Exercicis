@@ -1,3 +1,3 @@
-const aquadrada = calcul => Math.sqrt(calcul).toFixed(2)
+let aquadrada = calcul => Math.sqrt(calcul).toFixed(2)
 
-console.log(aquadrada(76))
+console.log(aquadrada(77))
