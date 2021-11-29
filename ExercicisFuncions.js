@@ -1,7 +1,9 @@
-function funcio(str){
-  var count = str.match(/[aeiou]/gi).length
-  return count;
+let Sum1 = 2
+let Sum2 = 4
+let Sum3 = 6
+
+function fsum(){
+  return Sum1, Sum2, Sum3;
+
 }
-let text = 'Hola'
-let Nvocals = funcio(text)
-console.log('El numero de vocals és -> ' + Nvocals)
+console.log(Sum1 + Sum2 + Sum3);
