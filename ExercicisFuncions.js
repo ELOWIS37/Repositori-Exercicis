@@ -1,5 +1,5 @@
-
-function Valor(Numero = 5) {
-    console.log(typeof(Numero))
+function funciodata(hoy){
+    var data = new Date();
+	console.log(data.getDate() + '/' + data.getMonth() + '/' + data.getFullYear())
 }
-Valor();
+funciodata();
