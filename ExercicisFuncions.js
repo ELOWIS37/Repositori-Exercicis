@@ -1,4 +1,7 @@
-function f(){
-    var Valor = 5;
+function funcio(str){
+  var count = str.match(/[aeiou]/gi).length
+  return count;
 }
-console.log(Valor)
+let text = 'Hola'
+let Nvocals = funcio(text)
+console.log('El numero de vocals és -> ' + Nvocals)
