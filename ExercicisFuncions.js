@@ -1,5 +1,4 @@
-function funciodata(hoy){
-    var data = new Date();
-	console.log(data.getDate() + '/' + data.getMonth() + '/' + data.getFullYear())
+function f(){
+    var Valor = 5;
 }
-funciodata();
+console.log(Valor)
