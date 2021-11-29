@@ -1,15 +1,6 @@
-let Sum1 = 2
-let Sum2 = 4
-let Sum3 = 6
-
-function funciodata(hoy){
-  var data = new Date();
-console.log(data.getDate() + '/' + data.getMonth() + '/' + data.getFullYear())
-
-function fsum(){
-  return Sum1, Sum2, Sum3;
+function fsum(Num1, Num2){
+  if (Num1 + Num2 == 30 || Num1 == 30 || Num2 == 30){
+    return true
+  }
 }
-
-}
-funciodata();
-console.log(Sum1 + Sum2 + Sum3)
+console.log('Suma de 15 + 15 = ' + fsum(15, 15))
