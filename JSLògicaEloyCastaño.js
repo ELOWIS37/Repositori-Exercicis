@@ -1,7 +1,24 @@
-var x = 50
-var y = 9
-x >= 10 && x <= 50 ?    console.log('El numero ' + x + ' està entre el rang 10 - 50')
-                  :     console.log('El numero ' + x + ' no està entre el rang 10 - 50')   
+var text;
+var nota = 8;
 
-y >= 10 && y <= 51 ?    console.log('El numero ' + y + ' està entre el rang 10 - 50')
-                   :    console.log('El numero ' + y + ' no està entre el rang 10 - 50')
+switch(nota) {
+        case 0,1,2,3,4:
+            text = "SUSPÈS";
+            break;
+        case 5:                 
+            text = "SUFICIENT";
+            break;
+        case 6:                 
+            text = "BÉ";
+            break;    
+        case 7,8:         
+            text = "NOTABLE";
+            break;
+        case 9,10:      
+            text = "EXCEL·LENT";
+            break;
+        default:                
+            text ="VALOR NO VÀLID";
+            break;
+}
+console.log(text)
