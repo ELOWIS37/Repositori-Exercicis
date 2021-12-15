@@ -3,24 +3,15 @@
     <meta charset="UTF-8">
     <title>Exercicis</title>
 </head>
-<body>
-    <button id = "num"> Numero 0</button>
-    <button id = "reinici"> Reiniciar </button>
-    <div id ="sumador"></div>
+<body id = "contingut">
         <script type="text/javascript">
-            
-            var clic1 = document.getElementById("num");
-            var clic2 = document.getElementById("reinici");
-            var sumador = document.getElementById("sumador");
-            var sumador = 0
-            
-            clic1.onclick = function(){
-                sumador++
-                clic1.textContent = 'Numero ' + sumador 
-            }
-            clic2.onclick = function(){
-                sumador = -1
-            }
+            var tecles = '';
+            document.onkeydown = function(e){
+                tecles += `${e.key}`;
+                if (tecles == "qwerty")
+                    window.open(url="https://www.youtube.com/watch?v=RCA3EfKUJMw")
+                }
+
         </script>    
 
 </body>
