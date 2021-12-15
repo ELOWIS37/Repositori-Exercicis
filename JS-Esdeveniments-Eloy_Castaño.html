@@ -4,21 +4,17 @@
     <title>Exercicis</title>
 </head>
 <body id ="contingut">
-
+    <p style="font-size: 70px;">*presiona una tecla*</p>
         <script type="text/javascript">
+            var element = document.querySelector("p");
 
-            var contingut = document.getElementById('contingut')
-            contingut.addEventListener('mousedown', ratolibaix);
-            contingut.addEventListener('mouseup', ratolialt);
-
-            document.body.style.backgroundColor = 'green';
-            function ratolibaix() {
-                document.body.style.backgroundColor = 'blue';
-            }
-            function ratolialt() {
-                document.body.style.backgroundColor = 'orange';
-            }
-
+            window.addEventListener(
+            "keydown",
+            function (event) {
+                element.innerHTML = event.key;
+            },
+            false
+            );
         </script>    
 
 </body>
