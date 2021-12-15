@@ -3,14 +3,24 @@
     <meta charset="UTF-8">
     <title>Exercicis</title>
 </head>
-<body id ="contingut">
-
+<body>
+    <button id = "num"> Numero 0</button>
+    <button id = "reinici"> Reiniciar </button>
+    <div id ="sumador"></div>
         <script type="text/javascript">
-        var contingut = document.getElementById('contingut');
-        contingut.addEventListener('keydown',teclat);
-        function teclat(e){
-            contingut.textContent += ` ${e.key}`;
-        }
+            
+            var clic1 = document.getElementById("num");
+            var clic2 = document.getElementById("reinici");
+            var sumador = document.getElementById("sumador");
+            var sumador = 0
+            
+            clic1.onclick = function(){
+                sumador++
+                clic1.textContent = 'Numero ' + sumador 
+            }
+            clic2.onclick = function(){
+                sumador = -1
+            }
         </script>    
 
 </body>
