@@ -1,7 +1,7 @@
-var numeros = [10, 20, 30, 40, 40, 50];
+var numeros = [ 1, 3, 6 ];
 
-var set = (numeros) => {
-    return [... new Set(numeros)];
-}
+Object.keys(numeros).map(function(clau) {
+   numeros[clau] = Math.pow(numeros[clau],3);
+});
 
-console.log(set(numeros)); 
+console.log(numeros);
