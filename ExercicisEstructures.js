@@ -1,3 +1,7 @@
-var numeros = [0,1,2,3,4,4];
-var arraySet = new Set([5,6,7,...numeros,8,9,9]);
-console.log(arraySet);
+var numeros = [10, 20, 30, 40, 40, 50];
+
+var set = (numeros) => {
+    return [... new Set(numeros)];
+}
+
+console.log(set(numeros)); 
