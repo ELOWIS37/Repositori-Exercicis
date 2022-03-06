@@ -1,17 +1,9 @@
-var paraules = [" aixecar ", " estudiar ", " pc ", " pilota ", " administratiu ", " aclarir "]
-var arrayDeParaules = [];
-var acomulador = 0
-var contador = 0
-for(var i = 0; i < paraules.length; i++) {
-  for(var ii = 0; ii < paraules[i].length; ii++){
-	  if (paraules[i][ii] == 'a'){
-      contador++ 
-      if (contador == 2){
-        arrayDeParaules[acomulador] = paraules[i];
-        acomulador++
-      }
-    }
-  }
-  contador = 0
-}
-document.write("Paraules amb més d'una lletra 'acomulador' -> " + arrayDeParaules)
+var testMap = new Map();
+
+testMap.set('1', '10');   
+testMap.set(1, '20');    
+testMap.set(true, '30'); 
+
+document.write(testMap.get('1'));
+document.write(testMap.get(1));
+document.write(testMap.get(true));
